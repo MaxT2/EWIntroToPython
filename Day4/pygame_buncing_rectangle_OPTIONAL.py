@@ -1,3 +1,6 @@
+#TODO
+# Go over
+
 # pygame basic sprite setup - base of all pygame projects
 # get a shape on the screen with x y variables
 # move it by changing x or y every frame in our update code

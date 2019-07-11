@@ -1,3 +1,7 @@
+#TODO
+# Go over
+
+
 # import pygame library so we can use it!
 import pygame
 import random

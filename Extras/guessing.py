@@ -1,3 +1,5 @@
+# another version of the guessing game
+
 import random
 secret_number = random.randint(1,5)
 guess = 0

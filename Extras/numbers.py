@@ -1,3 +1,7 @@
+#TODO
+# Go over and comment
+
+
 # print the result of adding two numbers together
 #number variables
 num1 = 8

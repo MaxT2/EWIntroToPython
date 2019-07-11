@@ -1,3 +1,7 @@
+#TODO
+# Go over and comment
+
+
 import turtle
 number_of_sides = input ("Number of sides ? ")
 number_of_sides = int (number_of_sides)

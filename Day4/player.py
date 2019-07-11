@@ -1,3 +1,7 @@
+#TODO
+# Go over
+
+
 import random
 import pygame
 

@@ -1,3 +1,6 @@
+#TODO
+# go over
+
 # what is a drawing program, what can you do?
 # you can draw
 # how?

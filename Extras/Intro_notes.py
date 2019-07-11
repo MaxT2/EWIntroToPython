@@ -1,3 +1,6 @@
+#TODO
+# outdated outline
+
 '''
 Intro to python class notes 8 Week
 Day 1-3/4

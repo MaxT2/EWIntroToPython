@@ -1,3 +1,7 @@
+#TODO
+# Go over
+
+
 # color definitions
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
