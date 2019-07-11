@@ -1,0 +1,10 @@
+x = int(input("What is x? "))
+y = int(input("What is Y? "))
+result1 = x + y
+print ("x+Y = %d"%result1)
+result1 = x - y
+print ("x-Y = %d"%result1)
+result1 = x * y
+print ("x*Y = %d"%result1)
+result1 = x / y
+print ("x/Y = %d"%result1)
