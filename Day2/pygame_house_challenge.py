@@ -1,7 +1,5 @@
 """
-This file is the basis of all pygame drawings and games.
-Once students have writen this file they will copy it
-and use it as the base of all other pygame projects
+Challenge: Draw a house!
 """
 
 # import pygame library so we can use it!
@@ -34,9 +32,19 @@ RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
 
+# add theses colors to your pygame_setup.py file if you want to have
+# them for your next project
+LIGHT_BLUE = (100, 200, 255)
+DARK_GREEN = (16, 161, 0)
+YELLOW = (255, 255, 0)
+
+
+
 # fill entire screen with color before game starts
 game_surface.fill(WHITE)
 
+# TEACHER - Boolean for adding ground and sky
+background = True
 
 # main game loop. Loops until running = False.
 running = True
@@ -57,28 +65,42 @@ while running == True:
     # limit the frame rate of your game
     clock.tick(FPS)
 
-    # update stuff here
+    # update stuff
 
-    # draw stuff here
+    # draw stuff
 
-    # draw all basic shapes
+    # TEACHER
+    if background:
+        #draw ground
+        rect(game_surface, DARK_GREEN, [(0, 500), (width, 300)])
+        # draw sky
+        rect(game_surface, LIGHT_BLUE, [(0, 0), (width, 500)])
+        # draw sun
+        circle(game_surface, YELLOW, (0, 0), 125)
 
-    # line (surface, color, (x,y),(x,y),width(optional))
-    line(game_surface, BLUE, (600, 400), (600, 500), 10)
 
-    # circle
-    # circle(surface,color,(x,y), radius, width(optional)
-    circle(game_surface, BLUE, (300, 200), 100)
-    # do another!
-    circle(game_surface, BLUE, (900, 200), 100)
 
-    # rectangle
-    # rect(surface, color, ((x,y), (width,height), width(optional))
-    rect(game_surface, BLUE, [(300, 600), (600, 100)])
 
-    # polygon
-    # polygon(surface, color,(x1,y1,x2,y2))
-    polygon(game_surface, BLUE, [(0, 100), (100, 50), (0, 0)])
+    # base rectangle
+    rect(game_surface, BLUE, [(200, 350), (800, 400)])
+
+    # roof Triangle
+    polygon(game_surface, GREEN, [(200, 350), (1000, 350), (600,100)])
+
+    # window 1
+    rect(game_surface, GREEN, [(275, 475), (175, 175)])
+
+    # window 2
+    rect(game_surface, GREEN, [(750, 475), (175, 175)])
+
+    # door
+    rect(game_surface, GREEN, [(525, 450), (150, 300)])
+
+    # door knob
+    circle(game_surface, BLUE, (630, 600), 25)
+
+
+
 
     # lastly: update and redraw entire screen
     pygame.display.flip()

@@ -1,5 +1,8 @@
-#TODO
-# pygame basic sprite setup - base of all pygame projects
+"""
+This file is the basis of all pygame drawings and games.
+Once students have writen this file they will copy it
+and use it as the base of all other pygame projects
+"""
 
 # import pygame library so we can use it!
 import pygame
@@ -11,7 +14,7 @@ from pygame.draw import *
 # initialize pygame code
 pygame.init()
 
-# setup display size
+# setup display size variables
 width = 1200
 height = 800
 
@@ -19,7 +22,7 @@ height = 800
 game_surface = pygame.display.set_mode((width, height))
 # pygame.display.set_caption('Window Caption!')
 
-# setup framerate
+# setup framerate stuff
 clock = pygame.time.Clock()
 FPS = 10
 
@@ -27,22 +30,23 @@ FPS = 10
 # define colors - CTR-SHIFT-A --> color picker
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
+RED = (255, 0, 0)
 GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
 
-
-# fill entire screen with color
+# fill entire screen with color before game starts
 game_surface.fill(WHITE)
 
 
-# main game loop
+# main game loop. Loops until running = False.
 running = True
-# when running is True game loop will run
 while running == True:
     # get input events and respond to them
-    # if event is .QUIT
+    # go over each event that happened
     for event in pygame.event.get():
-        # if we close the game window, stop the loop
+        # if the event is us closing the game window
         if event.type == pygame.QUIT:
+            # stop our loop
             running = False
 
     # game code that repeats every frame

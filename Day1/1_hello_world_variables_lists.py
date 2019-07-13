@@ -1,23 +1,30 @@
 # intro
 
+# print hello world!
 print("Hello World!")
+
+# right click in project window --> Run
+
 # print hello and then your name!
 print("Hello Tristen!")
-#print a number out!
+
+# print a number out!
 print(4)
+
 # print an empty line
 print()
 
-# when you run a project it will save your work automatically
 
-# Variables are super useful in programming.
-# They are a way to store information in or program that we can use!
-# To define variables in python we just need to write a name and then assign
-# the variable a value. In python we don’t need to worry about what type of
-# thing we put in our variables like most languages, python just figures it out.
-# When creating variables in python you should name them using all lowercase letters
-# with underscores instead of spaces. If the number is a constant that does not change
-# use all uppercase letters
+"""
+Variables are super useful in programming.
+They are a way to store information in or program that we can use!
+To define variables in python we just need to write a name and then assign
+the variable a value. In python we don’t need to worry about what type of
+thing we put in our variables like most languages, python just figures it out.
+When creating variables in python you should name them using all lowercase letters
+with underscores instead of spaces. If the number is a constant that does not change
+use all uppercase letters
+"""
 
 # define basic variables to print
 number_1 = 2

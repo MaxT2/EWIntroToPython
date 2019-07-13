@@ -1,6 +1,8 @@
-# input
-# python makes it really easy to get input from the user using the input(prompt) function
-# we can then store then input and choose to do something with the information
+"""
+Input
+python makes it really easy to get input from the user using the input(prompt) function
+we can then store then input and choose to do something with the information
+"""
 
 # store a greeting message
 GREETING = "Hello, "
